@@ -105,7 +105,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-white font-serif text-xl mb-2">Office</h3>
-                  <p className="text-gray-400 font-light mb-1">Abhi Golden I</p>
+                  <p className="text-gray-400 font-light mb-1">Golden I</p>
                   <p className="text-gray-400 font-light">Greater Noida West</p>
                 </div>
               </div>
