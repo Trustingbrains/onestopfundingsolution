@@ -66,10 +66,10 @@ export default function ContactPage() {
           {/* Left Column: Contact Info */}
           <div>
             <h2 className="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Get in Touch</h2>
-            <h1 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-serif text-gold mb-6 leading-tight">
               Connect with <span className="text-gold italic">OneStop</span> Funding Solutions
             </h1>
-            <p className="text-gray-400 text-lg font-light leading-relaxed mb-12">
+            <p className="text-gold-light text-lg font-light leading-relaxed mb-12">
               Reach out to us via phone, email, or visit our office. We aim to respond to all inquiries within 24 business hours.
             </p>
 
@@ -80,9 +80,9 @@ export default function ContactPage() {
                   <Phone className="w-6 h-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="text-white font-serif text-xl mb-2">Phone</h3>
-                  <p className="text-gray-400 font-light mb-1">Direct: +91 9211902004</p>
-                  <p className="text-gray-400 font-light">WhatsApp: +91 9211902004</p>
+                  <h3 className="text-gold font-serif text-xl mb-2">Phone</h3>
+                  <p className="text-gold-light font-light mb-1">Direct: +91 9211902004</p>
+                  <p className="text-gold-light font-light">WhatsApp: +91 9211902004</p>
                 </div>
               </div>
 
@@ -92,9 +92,9 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="text-white font-serif text-xl mb-2">Email</h3>
-                  <p className="text-gray-400 font-light mb-1">Support: onestopfundingsolutions07@gmail.com</p>
-                  <p className="text-gray-400 font-light">Sales: onestopfundingsolutions07@gmail.com</p>
+                  <h3 className="text-gold font-serif text-xl mb-2">Email</h3>
+                  <p className="text-gold-light font-light mb-1">Support: onestopfundingsolutions07@gmail.com</p>
+                  <p className="text-gold-light font-light">Sales: onestopfundingsolutions07@gmail.com</p>
                 </div>
               </div>
 
@@ -104,9 +104,9 @@ export default function ContactPage() {
                   <MapPin className="w-6 h-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="text-white font-serif text-xl mb-2">Office</h3>
-                  <p className="text-gray-400 font-light mb-1">Abhi Golden I</p>
-                  <p className="text-gray-400 font-light">Greater Noida West</p>
+                  <h3 className="text-gold font-serif text-xl mb-2">Office</h3>
+                  <p className="text-gold-light font-light mb-1">Golden I</p>
+                  <p className="text-gold-light font-light">Greater Noida West</p>
                 </div>
               </div>
 
@@ -116,9 +116,9 @@ export default function ContactPage() {
                   <Clock className="w-6 h-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="text-white font-serif text-xl mb-2">Business Hours</h3>
-                  <p className="text-gray-400 font-light mb-1">Mon - Sat: 9:30 AM - 6:30 PM IST</p>
-                  <p className="text-gray-400 font-light">Sun: Closed</p>
+                  <h3 className="text-gold font-serif text-xl mb-2">Business Hours</h3>
+                  <p className="text-gold-light font-light mb-1">Mon - Sat: 9:30 AM - 6:30 PM IST</p>
+                  <p className="text-gold-light font-light">Sun: Closed</p>
                 </div>
               </div>
             </div>
@@ -128,12 +128,12 @@ export default function ContactPage() {
           <div className="relative">
             <div className="absolute inset-0 bg-gold/5 rounded-3xl transform translate-x-2 translate-y-2"></div>
             <div className="bg-dark-card border border-dark-border p-8 md:p-10 rounded-3xl shadow-2xl relative z-10">
-              <h3 className="text-2xl font-serif text-white mb-8">Send us a Message</h3>
+              <h3 className="text-2xl font-serif text-gold mb-8">Send us a Message</h3>
               
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-400 mb-2">First Name</label>
+                    <label htmlFor="firstName" className="block text-sm font-medium text-gold-light mb-2">First Name</label>
                     <input
                       type="text"
                       id="firstName"
@@ -145,7 +145,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-400 mb-2">Last Name</label>
+                    <label htmlFor="lastName" className="block text-sm font-medium text-gold-light mb-2">Last Name</label>
                     <input
                       type="text"
                       id="lastName"
@@ -159,7 +159,7 @@ export default function ContactPage() {
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-gold-light mb-2">Email Address</label>
                   <input
                     type="email"
                     id="email"
@@ -172,7 +172,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="interest" className="block text-sm font-medium text-gray-400 mb-2">I'm interested in</label>
+                  <label htmlFor="interest" className="block text-sm font-medium text-gold-light mb-2">I'm interested in</label>
                   <div className="relative">
                     <select
                       id="interest"
@@ -197,7 +197,7 @@ export default function ContactPage() {
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                  <label htmlFor="message" className="block text-sm font-medium text-gold-light mb-2">Message</label>
                   <textarea
                     id="message"
                     required

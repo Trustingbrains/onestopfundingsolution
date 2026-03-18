@@ -52,10 +52,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Complete Funding Solutions</h2>
-          <h3 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
+          <h3 className="text-4xl md:text-5xl font-serif text-gold mb-6 leading-tight">
             Loan Services We Offer
           </h3>
-          <p className="text-gray-400 text-lg font-light leading-relaxed">
+          <p className="text-gold-light text-lg font-light leading-relaxed">
             We process a wide range of secured and unsecured loans through our partner banks and NBFCs to provide the best interest rates and faster approvals.
           </p>
         </div>
@@ -75,11 +75,11 @@ export default function Services() {
                     <Icon className="w-6 h-6 text-gold" />
                   </div>
                   
-                  <h4 className="text-xl font-serif text-white mb-3 group-hover:text-gold transition-colors duration-300">
+                  <h4 className="text-xl font-serif text-gold mb-3 group-hover:text-gold transition-colors duration-300">
                     {service.title}
                   </h4>
                   
-                  <p className="text-gray-500 font-light text-sm leading-relaxed">
+                  <p className="text-gold-light font-light text-sm leading-relaxed">
                     {service.description}
                   </p>
                 </div>

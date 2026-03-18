@@ -7,15 +7,15 @@ export default function Footer() {
           <span className="text-gold-light text-sm tracking-widest uppercase mt-1">Solutions</span>
         </a>
         
-        <p className="text-gray-500 font-light text-sm">
+        <p className="text-gold-light font-light text-sm">
           OneStop Funding Solutions • Financial Consulting Services
         </p>
         
         <div className="mt-8 flex space-x-6">
-          <a href="#" className="text-gray-400 hover:text-gold transition-colors duration-300">
+          <a href="#" className="text-gold-light hover:text-gold transition-colors duration-300">
             Privacy Policy
           </a>
-          <a href="#" className="text-gray-400 hover:text-gold transition-colors duration-300">
+          <a href="#" className="text-gold-light hover:text-gold transition-colors duration-300">
             Terms of Service
           </a>
         </div>

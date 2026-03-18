@@ -21,7 +21,7 @@ export default function Advantages() {
           <div className="order-2 lg:order-1 relative h-[500px] rounded-2xl overflow-hidden border border-dark-border shadow-2xl group">
             <div className="absolute inset-0 bg-gradient-to-tr from-gold/10 to-transparent z-10 mix-blend-overlay"></div>
             <img
-              src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1974&auto=format&fit=crop"
+              src="/images/advantage.png"
               alt="Smart Financial Solutions"
               className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-1000 "
               referrerPolicy="no-referrer"
@@ -33,11 +33,11 @@ export default function Advantages() {
 
           <div className="order-1 lg:order-2">
             <h2 className="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Your Trusted Loan Partner</h2>
-            <h3 className="text-4xl md:text-5xl font-serif text-white mb-8 leading-tight">
+            <h3 className="text-4xl md:text-5xl font-serif text-gold mb-8 leading-tight">
               Why Choose <span className="text-gold italic">OneStop</span> Funding Solutions
             </h3>
             
-            <p className="text-gray-400 text-lg font-light leading-relaxed mb-10">
+            <p className="text-gold-light text-lg font-light leading-relaxed mb-10">
               We work with multiple banks and NBFCs to provide the best loan offers available in the market.
             </p>
 
@@ -47,7 +47,7 @@ export default function Advantages() {
                   <div className="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center group-hover:bg-gold group-hover:border-gold transition-colors duration-300">
                     <Check className="w-3.5 h-3.5 text-gold group-hover:text-black transition-colors duration-300" />
                   </div>
-                  <span className="ml-4 text-gray-300 font-light text-lg group-hover:text-white transition-colors duration-300">
+                  <span className="ml-4 text-gold-light font-light text-lg group-hover:text-gold transition-colors duration-300">
                     {adv}
                   </span>
                 </li>

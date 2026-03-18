@@ -29,10 +29,10 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Simple & Transparent</h2>
-          <h3 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
+          <h3 className="text-4xl md:text-5xl font-serif text-gold mb-6 leading-tight">
             Our Loan Process
           </h3>
-          <p className="text-gray-400 text-lg font-light leading-relaxed">
+          <p className="text-gold-light text-lg font-light leading-relaxed">
             We have streamlined our process to ensure you get your loan approved and disbursed as quickly and smoothly as possible.
           </p>
         </div>
@@ -50,11 +50,11 @@ export default function Process() {
                   {step.number}
                 </span>
                 
-                <h4 className="text-xl font-serif text-white mb-4 group-hover:text-gold transition-colors duration-300">
+                <h4 className="text-xl font-serif text-gold mb-4 group-hover:text-gold transition-colors duration-300">
                   {step.title}
                 </h4>
                 
-                <p className="text-gray-500 font-light text-sm leading-relaxed">
+                <p className="text-gold-light font-light text-sm leading-relaxed">
                   {step.description}
                 </p>
               </div>

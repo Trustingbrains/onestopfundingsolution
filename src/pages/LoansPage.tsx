@@ -167,10 +167,10 @@ export default function LoansPage() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h1 className="text-5xl md:text-6xl font-serif text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-serif text-gold mb-6 leading-tight">
             Our Loan <span className="text-gold italic">Products</span>
           </h1>
-          <p className="text-gray-400 text-lg font-light leading-relaxed">
+          <p className="text-gold-light text-lg font-light leading-relaxed">
             Explore our comprehensive range of financial solutions designed to meet your personal and business needs with competitive rates and flexible terms.
           </p>
         </div>
@@ -187,8 +187,8 @@ export default function LoansPage() {
                   <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-6 border border-gold/20">
                     <Icon className="w-7 h-7 text-gold" />
                   </div>
-                  <h2 className="text-3xl font-serif text-white mb-4">{loan.title}</h2>
-                  <p className="text-gray-400 font-light leading-relaxed mb-8 max-w-xl">
+                  <h2 className="text-3xl font-serif text-gold mb-4">{loan.title}</h2>
+                  <p className="text-gold-light font-light leading-relaxed mb-8 max-w-xl">
                     {loan.description}
                   </p>
                   <Link
@@ -207,7 +207,7 @@ export default function LoansPage() {
                     {loan.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start">
                         <CheckCircle2 className="w-5 h-5 text-gold mr-3 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-300 text-sm font-light leading-relaxed">{feature}</span>
+                        <span className="text-gold-light text-sm font-light leading-relaxed">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -224,7 +224,7 @@ export default function LoansPage() {
           
           <div className="flex items-center mb-10">
             <Calculator className="w-8 h-8 text-gold mr-4" />
-            <h2 className="text-3xl md:text-4xl font-serif text-white">EMI Calculator</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-gold">EMI Calculator</h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
@@ -232,84 +232,66 @@ export default function LoansPage() {
             <div className="space-y-8">
               <div>
                 <div className="flex justify-between mb-2">
-                  <label className="text-gray-300 font-medium">Loan Amount</label>
+                  <label className="text-gold font-medium">Loan Amount</label>
                   <span className="text-gold font-semibold">{formatINR(principal)}</span>
                 </div>
                 <input
-                  type="range"
-                  min="100000"
-                  max="50000000"
-                  step="100000"
+                  type="number"
+                  step="10000"
                   value={principal}
                   onChange={(e) => setPrincipal(Number(e.target.value))}
-                  className="w-full h-2 bg-black rounded-lg appearance-none cursor-pointer accent-gold"
+                  className="w-full px-4 py-3 bg-black border border-dark-border rounded-lg text-gold-light focus:outline-none focus:border-gold"
                 />
-                <div className="flex justify-between mt-2 text-xs text-gray-500">
-                  <span>1L</span>
-                  <span>5Cr</span>
-                </div>
               </div>
 
               <div>
                 <div className="flex justify-between mb-2">
-                  <label className="text-gray-300 font-medium">Interest Rate (% p.a.)</label>
+                  <label className="text-gold font-medium">Interest Rate (% p.a.)</label>
                   <span className="text-gold font-semibold">{rate}%</span>
                 </div>
                 <input
-                  type="range"
-                  min="5"
-                  max="25"
+                  type="number"
                   step="0.1"
                   value={rate}
                   onChange={(e) => setRate(Number(e.target.value))}
-                  className="w-full h-2 bg-black rounded-lg appearance-none cursor-pointer accent-gold"
+                  className="w-full px-4 py-3 bg-black border border-dark-border rounded-lg text-gold-light focus:outline-none focus:border-gold"
                 />
-                <div className="flex justify-between mt-2 text-xs text-gray-500">
-                  <span>5%</span>
-                  <span>25%</span>
-                </div>
               </div>
 
               <div>
                 <div className="flex justify-between mb-2">
-                  <label className="text-gray-300 font-medium">Loan Tenure (Years)</label>
+                  <label className="text-gold font-medium">Loan Tenure (Years)</label>
                   <span className="text-gold font-semibold">{tenure} Years</span>
                 </div>
                 <input
-                  type="range"
-                  min="1"
-                  max="30"
+                  type="number"
                   step="1"
                   value={tenure}
                   onChange={(e) => setTenure(Number(e.target.value))}
-                  className="w-full h-2 bg-black rounded-lg appearance-none cursor-pointer accent-gold"
+                  className="w-full px-4 py-3 bg-black border border-dark-border rounded-lg text-gold-light focus:outline-none focus:border-gold"
                 />
-                <div className="flex justify-between mt-2 text-xs text-gray-500">
-                  <span>1 Yr</span>
-                  <span>30 Yrs</span>
-                </div>
               </div>
             </div>
 
             {/* Results */}
             <div className="bg-black border border-dark-border rounded-2xl p-8 flex flex-col justify-center">
               <div className="text-center mb-8 pb-8 border-b border-dark-border">
-                <p className="text-gray-400 text-sm uppercase tracking-widest mb-2">Monthly EMI</p>
-                <p className="text-4xl md:text-5xl font-serif text-gold">{formatINR(emi)}</p>
+                <p className="text-gold text-sm uppercase tracking-widest mb-2">Monthly EMI</p>
+                <p className="text-4xl md:text-5xl font-serif text-gold-light">{formatINR(emi)}</p>
               </div>
               
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400 font-light">Principal Amount</span>
-                  <span className="text-white font-medium">{formatINR(principal)}</span>
+                  <span className="text-gold font-light">Principal Amount</span>
+                  <span className="text-gold-light font-medium">{formatINR(principal)}</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400 font-light">Total Interest</span>
-                  <span className="text-white font-medium">{formatINR(totalInterest)}</span>
+                  <span className="text-gold font-light">Total Interest</span>
+                  <span className="text-gold-light font-medium">{formatINR(totalInterest)}</span>
                 </div>
                 <div className="flex justify-between items-center pt-4 border-t border-dark-border">
-                  <span className="text-gray-300 font-medium">Total Amount Payable</span>
-                  <span className="text-gold font-semibold text-lg">{formatINR(totalPayable)}</span>
+                  <span className="text-gold font-medium">Total Amount Payable</span>
+                  <span className="text-gold-light font-semibold text-lg">{formatINR(totalPayable)}</span>
                 </div>
               </div>
               

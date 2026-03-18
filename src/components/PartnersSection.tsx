@@ -18,10 +18,10 @@ export default function PartnersSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Our Network</h2>
-          <h3 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
+          <h3 className="text-4xl md:text-5xl font-serif text-gold mb-6 leading-tight">
             Trusted Banking Partners
           </h3>
-          <p className="text-gray-400 text-lg font-light leading-relaxed">
+          <p className="text-gold-light text-lg font-light leading-relaxed">
             We have partnered with India's leading private banks, public sector banks, and top NBFCs to bring you the best financial products.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function PartnersSection() {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors duration-300">
+              <span className="text-gold-light text-sm font-medium group-hover:text-gold transition-colors duration-300">
                 {partner.name}
               </span>
             </div>

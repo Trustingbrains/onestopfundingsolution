@@ -14,11 +14,11 @@ export default function BuilderFunding() {
               <span className="text-gold-light text-xs font-semibold tracking-widest uppercase">Special Service</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-serif text-gold mb-8 leading-tight">
               Builder / Project <span className="text-gold italic">Funding</span>
             </h2>
             
-            <p className="text-gray-400 text-lg font-light leading-relaxed mb-8">
+            <p className="text-gold-light text-lg font-light leading-relaxed mb-8">
               We specialize in arranging project funding for small builders who develop low-rise buildings in freehold or approved areas. Through our banking and NBFC network we help builders secure construction funding so projects can be completed faster and with proper financial support.
             </p>
             
@@ -27,8 +27,8 @@ export default function BuilderFunding() {
                 <Building2 className="w-8 h-8 text-gold" />
               </div>
               <div>
-                <h4 className="text-white font-serif text-xl">Project Funding Support</h4>
-                <p className="text-gray-500 text-sm font-light">For small builders & developers</p>
+                <h4 className="text-gold font-serif text-xl">Project Funding Support</h4>
+                <p className="text-gold-light text-sm font-light">For small builders & developers</p>
               </div>
             </div>
             
@@ -41,18 +41,17 @@ export default function BuilderFunding() {
           </div>
 
           <div className="relative h-[600px] rounded-2xl overflow-hidden border border-dark-border shadow-2xl group">
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/images/builder-project.png"
               alt="Construction Project"
-              className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-1000"
+              className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
             
             <div className="absolute bottom-0 left-0 w-full p-8 z-20 bg-gradient-to-t from-black via-black/80 to-transparent">
               <div className="border-l-2 border-gold pl-6">
                 <p className="text-gold font-serif text-2xl mb-2">Secure Funding</p>
-                <p className="text-gray-300 font-light text-sm">Complete projects faster and efficiently.</p>
+                <p className="text-gold-light font-light text-sm">Complete projects faster and efficiently.</p>
               </div>
             </div>
           </div>

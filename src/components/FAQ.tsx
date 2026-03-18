@@ -38,10 +38,10 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Common Queries</h2>
-          <h3 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
+          <h3 className="text-4xl md:text-5xl font-serif text-gold mb-6 leading-tight">
             Frequently Asked <span className="text-gold italic">Questions</span>
           </h3>
-          <p className="text-gray-400 text-lg font-light leading-relaxed">
+          <p className="text-gold-light text-lg font-light leading-relaxed">
             Find answers to some of the most common questions about our loan services and processes.
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function FAQ() {
                 className="w-full px-6 py-5 flex items-center justify-between focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="text-left text-lg font-serif text-white pr-4">{faq.question}</span>
+                <span className="text-left text-lg font-serif text-gold pr-4">{faq.question}</span>
                 <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-300 ${
                   openIndex === index ? 'bg-gold text-black' : 'bg-dark-card border border-dark-border text-gold'
                 }`}>
@@ -71,7 +71,7 @@ export default function FAQ() {
                   openIndex === index ? 'max-h-48 pb-6 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <p className="text-gray-400 font-light leading-relaxed">
+                <p className="text-gold-light font-light leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

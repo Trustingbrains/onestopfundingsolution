@@ -33,10 +33,10 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link to={isHome ? "#home" : "/"} className="text-gray-300 hover:text-gold transition-colors text-sm uppercase tracking-wider">Home</Link>
-          <Link to="/loans" className="text-gray-300 hover:text-gold transition-colors text-sm uppercase tracking-wider">Loans</Link>
-          <Link to="/#about" className="text-gray-300 hover:text-gold transition-colors text-sm uppercase tracking-wider">About</Link>
-          <Link to="/partners" className="text-gray-300 hover:text-gold transition-colors text-sm uppercase tracking-wider">Partners</Link>
+          <Link to={isHome ? "#home" : "/"} className="text-gold-light hover:text-gold transition-colors text-sm uppercase tracking-wider">Home</Link>
+          <Link to="/loans" className="text-gold-light hover:text-gold transition-colors text-sm uppercase tracking-wider">Loans</Link>
+          <Link to="/#about" className="text-gold-light hover:text-gold transition-colors text-sm uppercase tracking-wider">About</Link>
+          <Link to="/partners" className="text-gold-light hover:text-gold transition-colors text-sm uppercase tracking-wider">Partners</Link>
           <Link
             to="/contact"
             className="px-6 py-2 border border-gold text-gold hover:bg-gold hover:text-black transition-all duration-300 text-sm uppercase tracking-wider rounded-lg"
