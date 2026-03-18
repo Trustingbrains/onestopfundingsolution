@@ -10,6 +10,10 @@ export default function Footer() {
         <p className="text-gold-light font-light text-sm">
           OneStop Funding Solutions • Financial Consulting Services
         </p>
+
+        <p className="text-gold-light font-light text-sm">
+          Designed and Developed by <a href="https://trustingbrains.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gold">Trusting Brains</a>
+        </p>
         
         <div className="mt-8 flex space-x-6">
           <a href="#" className="text-gold-light hover:text-gold transition-colors duration-300">
