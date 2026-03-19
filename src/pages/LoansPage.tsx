@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   Home, CreditCard, Briefcase, Building, Wallet, 
   RefreshCw, Landmark, Factory, HardHat, Building2, 
@@ -133,10 +133,21 @@ export default function LoansPage() {
   const [principal, setPrincipal] = useState(2500000);
   const [rate, setRate] = useState(8.5);
   const [tenure, setTenure] = useState(10);
+  const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    if (location.hash === '#emi-calculator') {
+      // Small delay ensures the page has fully rendered before scrolling
+      setTimeout(() => {
+        const el = document.getElementById('emi-calculator');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
 
   const calculateEMI = () => {
     const p = principal;
@@ -219,7 +230,7 @@ export default function LoansPage() {
         </div>
 
         {/* EMI Calculator */}
-        <div className="bg-dark-card border border-dark-border rounded-3xl p-8 md:p-12 relative overflow-hidden">
+        <div id="emi-calculator" className="bg-dark-card border border-dark-border rounded-3xl p-8 md:p-12 relative overflow-hidden scroll-mt-28">
           <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-[80px] pointer-events-none"></div>
           
           <div className="flex items-center mb-10">

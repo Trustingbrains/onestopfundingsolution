@@ -1,4 +1,4 @@
-import { Building2 } from 'lucide-react';
+import { Building2, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function BuilderFunding() {
@@ -17,11 +17,57 @@ export default function BuilderFunding() {
             <h2 className="text-4xl md:text-5xl font-serif text-gold mb-8 leading-tight">
               Builder / Project <span className="text-gold italic">Funding</span>
             </h2>
-            
-            <p className="text-gold-light text-lg font-light leading-relaxed mb-8">
-              We specialize in arranging project funding for small builders who develop low-rise buildings in freehold or approved areas. Through our banking and NBFC network we help builders secure construction funding so projects can be completed faster and with proper financial support.
-            </p>
-            
+
+            <div className="space-y-8 mb-10">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <CheckCircle2 className="w-6 h-6 text-gold" />
+                </div>
+                <div className="ml-4">
+                  <h4 className="text-gold font-serif text-xl mb-2">COMPLETE LOAN SOLUTIONS</h4>
+                  <p className="text-gold-light font-light">
+                    We provide funding solutions for all types of loans, including specialized support for real estate developers.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <CheckCircle2 className="w-6 h-6 text-gold" />
+                </div>
+                <div className="ml-4">
+                  <h4 className="text-gold font-serif text-xl mb-2">DEDICATED SUPPORT FOR DEVELOPERS</h4>
+                  <p className="text-gold-light font-light">
+                    For low-rise (approved/ freehold) & high-rise projects, our expert team works closely with you to understand your exact funding requirements.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <CheckCircle2 className="w-6 h-6 text-gold" />
+                </div>
+                <div className="ml-4">
+                  <h4 className="text-gold font-serif text-xl mb-2">NO NEED FOR PRIVATE FINANCIERS</h4>
+                  <p className="text-gold-light font-light">
+                    You don't need to rely on silent or private financiers. We connect you with trusted banks and NBFCs for secure funding.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <CheckCircle2 className="w-6 h-6 text-gold" />
+                </div>
+                <div className="ml-4">
+                  <h4 className="text-gold font-serif text-xl mb-2">SMART BANKS & NBFC SELECTION</h4>
+                  <p className="text-gold-light font-light">
+                    Our team carefully selects the most suitable bank or NBFC based on your project needs to ensure smooth funding.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="flex items-center space-x-4 mb-10">
               <div className="w-16 h-16 rounded-full bg-black border border-gold flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.2)]">
                 <Building2 className="w-8 h-8 text-gold" />
@@ -42,7 +88,7 @@ export default function BuilderFunding() {
 
           <div className="relative h-[600px] rounded-2xl overflow-hidden border border-dark-border shadow-2xl group">
             <img
-              src="/images/builder-project.png"
+              src="/images/builder.png"
               alt="Construction Project"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
