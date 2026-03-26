@@ -28,7 +28,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center space-x-3">
             {/* Logo Image */}
     <img 
-      src="/images/logo.png" 
+      src="/images/loogo.png" 
       alt="Logo" 
       className="w-auto h-12 object-contain"
     />

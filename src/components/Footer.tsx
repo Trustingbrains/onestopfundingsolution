@@ -6,7 +6,7 @@ export default function Footer() {
         {/* Logo + Brand */}
         <a href="#" className="flex items-center gap-3 mb-6">
           <img
-            src="/images/logo.png"
+            src="/images/loogo.png"
             alt="OneStop Funding Solutions Logo"
             className="h-12 w-auto object-contain"
           />
@@ -24,14 +24,14 @@ export default function Footer() {
           Designed and Developed by <a href="https://trustingbrains.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gold">Trusting Brains</a>
         </p>
         
-        <div className="mt-8 flex space-x-6">
+        {/* <div className="mt-8 flex space-x-6">
           <a href="#" className="text-gold-light hover:text-gold transition-colors duration-300">
             Privacy Policy
           </a>
           <a href="#" className="text-gold-light hover:text-gold transition-colors duration-300">
             Terms of Service
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
