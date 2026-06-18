@@ -8,7 +8,7 @@ export default function Footer() {
           <img
             src="/images/logooo2.png"
             alt="OneStop Funding Solutions Logo"
-            className="h-50 w-auto object-contain"
+            className="h-40 w-auto object-contain"
           />
           {/* <div className="flex flex-col text-left">
             <span className="text-gold font-serif font-bold text-2xl leading-none">OneStop Funding</span>
