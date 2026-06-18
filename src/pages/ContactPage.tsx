@@ -93,8 +93,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-gold font-serif text-xl mb-2">Email</h3>
-                  <p className="text-gold-light font-light mb-1">Support: onestopfundingsolutions07@gmail.com</p>
-                  <p className="text-gold-light font-light">Sales: onestopfundingsolutions07@gmail.com</p>
+                  <p className="text-gold-light font-light mb-1">Support: onestop.anujsiddhu@gmail.com</p>
+                  <p className="text-gold-light font-light">Sales: onestop.anujsiddhu@gmail.com</p>
                 </div>
               </div>
 
