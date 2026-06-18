@@ -6,14 +6,14 @@ export default function Footer() {
         {/* Logo + Brand */}
         <a href="#" className="flex items-center gap-3 mb-6">
           <img
-            src="/images/loogo.png"
+            src="/images/logooo2.png"
             alt="OneStop Funding Solutions Logo"
             className="h-12 w-auto object-contain"
           />
-          <div className="flex flex-col text-left">
+          {/* <div className="flex flex-col text-left">
             <span className="text-gold font-serif font-bold text-2xl leading-none">OneStop Funding</span>
             <span className="text-gold-light text-sm tracking-widest uppercase mt-1">Solutions</span>
-          </div>
+          </div> */}
         </a>
 
         <p className="text-gold-light font-light text-sm">
